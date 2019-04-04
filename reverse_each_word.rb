@@ -3,14 +3,13 @@
 #iterate over each and reverse each word
 #join
 
-
 def reverse_each_word(sentence)
-sentence.split
-new_sentence = []
-sentence_array = sentence.split
-sentence_array.collect do |word|
-new_sentence << word.reverse
+  sentence.split
+  return_array = []
+  sentence = sentence.split
+  sentence.collect do |word| 
+  return_array << word.reverse
 end
-new_sentence.join(" ")
+return_array.join(" ")
 end
 
